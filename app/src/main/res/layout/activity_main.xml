@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/blue">
+
+    <View
+        android:id="@+id/top_view"
+        android:layout_height="200dp"
+        android:layout_width="match_parent"
+        android:background="@drawable/gradient"
+        />
+    <GridLayout
+        android:id="@+id/grid_view"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:rowCount="2"
+        android:columnCount="2"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="-80dp"
+        android:layout_below="@id/top_view">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            app:cardCornerRadius="15dp"
+            android:layout_rowWeight="1"
+            android:layout_column="0"
+            android:layout_margin="12dp"
+            app:cardElevation="12dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="7dp">
+
+                <ImageView
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:src="@drawable/iconjarak" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Jarak Sensor :"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#40A2E3"/>
+
+                <TextView
+                    android:id="@+id/nilaiSensor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="9sp"
+                    android:text="-"
+                    android:textSize="26sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"/>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            app:cardCornerRadius="15dp"
+            android:layout_rowWeight="1"
+            android:layout_column="1"
+            android:layout_margin="12dp"
+            app:cardElevation="12dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="7dp">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="135dp"
+                    android:layout_marginTop="-24dp"
+                    android:src="@drawable/iconindikator" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Indikator Air :"
+                    android:textSize="18sp"
+                    android:layout_marginTop="-46dp"
+                    android:textStyle="bold"
+                    android:textColor="#0D9276"/>
+
+                <TextView
+                    android:id="@+id/nilaiIndikator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="-"
+                    android:layout_marginTop="7dp"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            app:cardCornerRadius="15dp"
+            android:layout_rowWeight="1"
+            android:layout_column="0"
+            android:layout_margin="12dp"
+            android:layout_row="1"
+            app:cardElevation="12dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="7dp">
+
+                <ImageView
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:src="@drawable/iconstatus" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Status :"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#F3B664"/>
+
+                <TextView
+                    android:id="@+id/nilaiStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="-"
+                    android:layout_marginTop="7dp"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            app:cardCornerRadius="15dp"
+            android:layout_rowWeight="1"
+            android:layout_column="1"
+            android:layout_margin="12dp"
+            android:layout_row="1"
+            app:cardElevation="12dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="7dp">
+
+                <ImageView
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:src="@drawable/iconsirine" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Status Sirine :"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#FF0000"/>
+
+                <TextView
+                    android:id="@+id/nilaiSirine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="-"
+                    android:layout_marginTop="7dp"
+                    android:textSize="35sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </GridLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/grid_view"
+        android:id="@+id/sirinebutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="30dp">
+
+        <ImageButton
+            android:id="@+id/onsirine"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/button"/>
+
+        <ImageButton
+            android:id="@+id/disable"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/disablebtn"/>
+
+        <ImageButton
+            android:id="@+id/offsirine"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/buttonred" />
+
+        <ImageButton
+            android:id="@+id/warningsirine"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/buttonyellow"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textstatus"
+        android:layout_below="@id/sirinebutton"
+        android:text="Manual"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginTop="-100dp"
+        android:layout_marginRight="35dp"
+        android:layout_alignParentEnd="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp" />
+
+    <Switch
+        android:id="@+id/switchrelay"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/textstatus"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="55dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleX="1.5"
+        android:scaleY="1.5"
+         />
+
+    <Button
+        android:layout_below="@id/sirinebutton"
+        android:id="@+id/kamerabutton"
+        android:layout_width="360dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:backgroundTint="@color/white"
+        android:drawableLeft="@drawable/baseline_camera_alt_24"
+        android:drawablePadding="2dp"
+        android:gravity="center_vertical"
+        android:text="       Kamera                        >"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_marginTop="35dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Dashboard"
+        android:textSize="45sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+
+    <ImageButton
+        android:id="@+id/history"
+        android:layout_marginTop="-10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="10dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/history" />
+
+
+    <TextView
+        android:id="@+id/txtwaktu"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginEnd="10dp"
+        android:text=""
+        />
+
+</RelativeLayout>

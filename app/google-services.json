@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "630305534142",
+    "project_id": "monitoringbanjir-7a274",
+    "storage_bucket": "monitoringbanjir-7a274.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:630305534142:android:327510e584a8abd36d6eef",
+        "android_client_info": {
+          "package_name": "com.example.monitoringbanjir"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyARDy83Xs6-fEcL1NuvpmQZ5fNHP9W_IN4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
